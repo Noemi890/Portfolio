@@ -12,21 +12,21 @@ const NavBar = ({ theme, changeThemeOnClick }) => {
     <nav className="navBar">
       <div className="icons_container">
         <Tooltip title='About Me' placement="top">
-        <a href="#">
+        <a href="#about_me">
           <IconButton>
             <NotesIcon />
           </IconButton>
         </a>
         </Tooltip>
         <Tooltip title='Projects' placement="top">
-        <a href="#">
+        <a href="#projects">
           <IconButton>
             <ComputerIcon />
           </IconButton>
         </a>
         </Tooltip>
         <Tooltip title='Contacts' placement="top">
-        <a href="#">
+        <a href="#contacts">
           <IconButton>
             <ContactsIcon />
           </IconButton>
