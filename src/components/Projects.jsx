@@ -1,10 +1,11 @@
 import React from "react";
 import { projects } from "../utils/projects";
-import { Grid, Container, Card, CardActionArea, CardMedia, CardContent, Typography } from "@mui/material";
+import { Grid, Container, Card, CardActionArea, CardMedia, CardContent, Typography, Paper } from "@mui/material";
 
 const Projects = () => {
   return (
     <Container>
+      <Paper>My Projects</Paper>
       <Grid container id="projects">
         {projects.map((project, i) => {
           return (

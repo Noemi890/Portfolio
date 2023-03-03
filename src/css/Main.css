@@ -12,6 +12,11 @@
   margin-bottom: 50px;
 }
 
+.interesting_facts_container {
+  display: flex;
+  margin-bottom: 50px;
+}
+
 .about_me_paper > .MuiTypography-root:hover {
   cursor: default;
 }

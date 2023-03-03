@@ -53,7 +53,7 @@ const AboutMe = () => {
           </CardContent>
         </Card>
       </Container>
-      <Container maxWidth="md" sx={{ display: "flex" }}>
+      <Container maxWidth="md" className="interesting_facts_container">
         <Card className="about_me_card" raised>
           <Typography variant="subtitle1" gutterBottom>
             I've always been interested in coding and programming languages,
