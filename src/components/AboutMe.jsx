@@ -5,7 +5,6 @@ import {
   Card,
   CardContent,
   Divider,
-  SvgIcon,
 } from "@mui/material";
 
 const AboutMe = () => {
