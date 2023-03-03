@@ -1,6 +1,6 @@
 .app {
-  height: 100vh;
-  width: 100vw;
+  min-height: auto;
+  min-width: auto;
 
   display: flex;
   flex-direction: column;
@@ -9,9 +9,11 @@
 }
 
 .dark .app {
-  background-image: url("../utils/background3.avif");
+  background-image: url("../utils/background2.avif");
+  background-repeat: repeat;
 }
 
 .light .app {
   background-image: url("../utils/background.avif");
+  background-repeat: repeat;
 }

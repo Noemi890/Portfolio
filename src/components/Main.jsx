@@ -1,11 +1,18 @@
 import React from "react"
+import "../css/Main.css"
+import AboutMe from "./AboutMe"
+import Projects from "./Projects"
+
 
 const Main = () => {
   return (
     <>
-      <div id="about_me"></div>
-      <div id="projects"></div>
-      <div id="contacts"></div>
+      <AboutMe />
+      <Projects />
+      {/*
+      <Container id="contacts">
+        <Paper elevation={8}/>
+      </Container> */}
     </>
 
   )

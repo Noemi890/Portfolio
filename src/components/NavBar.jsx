@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/NavBar.css";
-import { IconButton, Tooltip } from "@mui/material";
+import { IconButton, Tooltip, Container } from "@mui/material";
 import ComputerIcon from "@mui/icons-material/Computer";
 import NotesIcon from "@mui/icons-material/Notes";
 import ContactsIcon from "@mui/icons-material/Contacts";
@@ -9,10 +9,10 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const NavBar = ({ theme, changeThemeOnClick }) => {
   return (
-    <nav className="navBar">
+    <Container className="navBar">
       <div className="icons_container">
         <Tooltip title='About Me' placement="top">
-        <a href="#about_me">
+        <a href="#about_me_anchor">
           <IconButton>
             <NotesIcon />
           </IconButton>
@@ -42,7 +42,7 @@ const NavBar = ({ theme, changeThemeOnClick }) => {
           </IconButton>
           </Tooltip>
       </div>
-    </nav>
+    </Container>
   );
 };
 

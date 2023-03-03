@@ -1,0 +1,26 @@
+.about_me_card {
+  padding: 25px;
+  text-align: center;
+}
+
+.about_me_card ul {
+  list-style: none;
+}
+
+#about_me {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about_me_paper > .MuiTypography-root:hover {
+  cursor: default;
+}
+
+.gaming_section {
+  display: flex;
+  justify-content: center;
+}
+
+.gaming_section > svg {
+  place-self: center;
+}
