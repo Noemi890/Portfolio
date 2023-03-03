@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./css/App.css";
 import NavBar from "./components/NavBar";
+import Main from "./components/Main";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -35,6 +36,7 @@ function App() {
     <ThemeProvider theme={themeSelected}>
       <CssBaseline />
     <div className="app">
+      <Main />
       <NavBar theme={theme} changeThemeOnClick={changeThemeOnClick}/>
     </div>
     </ThemeProvider>
