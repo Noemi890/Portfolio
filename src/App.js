@@ -1,14 +1,43 @@
 import React from "react";
+import { useState } from "react";
 import "./css/App.css";
+import NavBar from "./components/NavBar";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
 function App() {
+
+  const [theme, setTheme] = useState('dark')
+
+  const themeSelected = createTheme({
+    palette: {
+      mode: theme,
+    },
+  });
+
+  const changeThemeOnClick = () => {
+    if (theme === 'dark') {
+      setTheme('light') 
+
+      document.body.className = 'light'
+    
+    }
+
+    else {
+      setTheme('dark')
+
+      document.body.className = 'dark'
+    }
+    
+  }
+
   return (
-    <div className="App">
-      <div className="background">
-        <div className="square_1_layout"></div>
-        <div className="square_2_layout"></div>
-      </div>
+    <ThemeProvider theme={themeSelected}>
+      <CssBaseline />
+    <div className="app">
+      <NavBar theme={theme} changeThemeOnClick={changeThemeOnClick}/>
     </div>
+    </ThemeProvider>
   );
 }
 

@@ -1,47 +1,13 @@
-.App {
+.dark .app {
   height: 100vh;
   width: 100vw;
 
-  background-color: rgb(236, 235, 235);
+  background-image: url("../utils/background3.avif");
 }
 
-.background {
-  position: relative;
-}
+.light .app {
+  height: 100vh;
+  width: 100vw;
 
-.square_1_layout {
-  position: fixed;
-  top: 150px;
-  left: 200px;
-  width: 400px;
-  height: 400px;
-  animation-name: firstSquare;
-  animation-duration: 3s;
-
-  border: 5px solid rgba(255, 98, 124, 0.7);
-}
-
-@keyframes firstSquare {
-  0%   {border-color: rgb(255, 220, 220); left: -100px; top: 150px;}
-  100% {border-color:rgba(255, 98, 124, 0.7); left:200px; top:150px;}
-}
-
-.square_2_layout {
-  position: fixed;
-  bottom: 150px;
-  left: 350px;
-  width: 300px;
-  height: 300px;
-
-  border: 5px solid rgba(184, 50, 184, 0.7);
-
-  transform: rotate(20deg);
-
-  animation-name: secondSquare;
-  animation-duration: 3s;
-}
-
-@keyframes secondSquare {
-  0%   {border-color: rgba(249, 199, 249, 0.7); left: 350px; bottom: -100px;}
-  100% {border-color:rgba(184, 50, 184, 0.7); left:350px; bottom:150px;}
+  background-image: url("../utils/background.avif");
 }

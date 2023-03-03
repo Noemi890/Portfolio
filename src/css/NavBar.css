@@ -1,0 +1,24 @@
+.navBar {
+  position: fixed;
+  bottom: 20px;
+  left: 250px;
+  width: 70%;
+  height: 50px;
+
+  border-radius: 25px;
+}
+
+.dark .navBar {
+  background-color: #0005;
+}
+
+.light .navBar {
+  background-color: rgba(126, 126, 126, 0.333);
+}
+
+.icons_container {
+  display: flex;
+  height: inherit;
+  justify-content: space-around;
+  align-items: center;
+}
