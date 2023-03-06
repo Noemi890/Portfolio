@@ -1,31 +1,40 @@
-.about_me_card {
-  padding: 25px;
-  text-align: center;
-}
-
-.about_me_card ul {
-  list-style: none;
-}
-
-#about_me {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.interesting_facts_container {
-  display: flex;
-  margin-bottom: 50px;
-}
-
-.about_me_paper > .MuiTypography-root:hover {
+#intro_container, #about_me_anchor {
   cursor: default;
 }
 
-.gaming_section {
-  display: flex;
-  justify-content: center;
+#intro_container {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
-.gaming_section > svg {
-  place-self: center;
+.waving_hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(14.0deg) }
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(14.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) }
+100% { transform: rotate( 0.0deg) }
+}
+
+#intro_container .MuiDivider-root {
+  margin-bottom: 50px;
+}
+
+.MuiTypography-h3.css-gepadz-MuiTypography-root {
+  margin-bottom: 30px;
+}
+
+#about_me_anchor {
+  margin-top: 70px;
 }

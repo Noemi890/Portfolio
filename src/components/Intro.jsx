@@ -7,9 +7,55 @@ import {
 
 const AboutMe = () => {
   return (
-    <div id="about_me_anchor">
+    <div id="intro">
+      <Container id="intro_container" maxWidth="md">
+        <Typography variant="h1">
+          Hello there!{" "}
+          <span className="waving_hand" role="img" aria-label="hand waving">
+            👋
+          </span>
+        </Typography>
+        <Divider role="presentation" variant="fullWidth" />
+        
+          <Typography variant="h3">
+            My name is Noemi and I am a Junior Software Developer!
+          </Typography>
+          <Typography variant="h5" mb={4}>
+              I am a{" "}
+              <u>
+                <b>passionate</b>
+              </u>{" "}
+              and{" "}
+              <u>
+                <b>creative</b>
+              </u>{" "}
+              developer, always{" "}
+              <u>
+                <b>positive</b>
+              </u>{" "}
+              and{" "}
+              <u>
+                <b>proactive</b>
+              </u>
+              , with a{" "}
+              <u>
+                <b>great</b>
+              </u>{" "}
+              willigness to learn.
+            </Typography>
+            <Divider variant="fullWidth"/>
+            <Typography variant="h5">
+              After an intensive 6 months full-time course I am now seeking
+              an opportunity to change my future and enter in the tech
+              industry.
+            </Typography>
+            <Container id="about_me_anchor">
+              
+            </Container>
+        {/* 
       <Container maxWidth="md" className="interesting_facts_container">
-          <Typography variant="h5" gutterBottom>
+        <Card className="about_me_card" raised>
+          <Typography variant="subtitle1" gutterBottom>
             I've always been interested in coding and programming languages,
             spending my free time to learn the fundamentals of{" "}
             <u>
@@ -32,7 +78,7 @@ const AboutMe = () => {
             </u>
             .
           </Typography>
-          <Typography variant="h5" gutterBottom mb={2}>
+          <Typography variant="subtitle1" gutterBottom mb={2}>
             I have a specific passion for <em>front-end</em> but I've also took
             on some
             <em>back-end</em> skills during the Bootcamp, such as{" "}
@@ -52,7 +98,7 @@ const AboutMe = () => {
           <Divider variant="middle" />
           <Typography
             className="gaming_section"
-            variant="h5"
+            variant="subtitle1"
             gutterBottom
             mt={2}
           >
@@ -61,7 +107,7 @@ const AboutMe = () => {
               🕹
             </span>
           </Typography>
-          <Typography variant="h5">
+          <Typography component="div">
             I specifically like titles such as
             <ul>
               <li>
@@ -84,7 +130,7 @@ const AboutMe = () => {
               </li>
             </ul>
           </Typography>
-          <Typography variant="h5" gutterBottom>
+          <Typography variant="body1" gutterBottom>
             Also, I enjoy reading{" "}
             <span role="img" aria-label="book">
               📖
@@ -98,9 +144,11 @@ const AboutMe = () => {
           <Typography variant="body1" gutterBottom>
 
           </Typography>
+        </Card> */}
+
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;
