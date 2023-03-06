@@ -3,18 +3,24 @@ export const projects = [
     name: 'Cohort Manager 2.0',
     description: '',
     img: '',
-    video: ''
+    video: '',
+    repo: '',
+    liveApp: ''
   },
   {
     name: 'PlayNation',
     description: '',
     img: '',
-    video: ''
+    video: '',
+    repo: '',
+    liveApp: ''
   },
   {
     name: 'RolePlay',
     description: '',
     img: '',
-    video: ''
+    video: '',
+    repo: '',
+    liveApp: ''
   }
 ]
