@@ -17,8 +17,7 @@ const AboutMe = () => {
           </u>
           . Then, about a year ago I decided to change my life for the better. I
           quitted my job and took on an intensive full-time course to improve my
-          skills and take on new programming languages that I didn't even
-          understand at the beginning.
+          skills and take on new programming languages.
         </Typography>
         <Typography variant="h5" gutterBottom mb={2}>
           I have a specific passion for <em>front-end</em>, I am proficient with{" "}
@@ -29,18 +28,19 @@ const AboutMe = () => {
           <b>
             <u>React</u>
           </b>
-          , but I've also took on some <em>back-end</em> skills during the
-          Bootcamp, such as{" "}
+          , but I've also took on some <em>back-end</em> skills during the course, such as{" "}
           <u>
             <b>MySQL</b>
           </u>
           ,{" "}
           <u>
             <b>Express.js</b>
-          </u>{" "}
-          and{" "}
+          </u>,{" "}
           <u>
             <b>Prisma</b>
+          </u>{" "} and {" "}
+          <u>
+            <b>Json WebToken</b>
           </u>
           .
         </Typography>
