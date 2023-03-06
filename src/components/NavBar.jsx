@@ -2,6 +2,7 @@ import React from "react";
 import "../css/NavBar.css";
 import { IconButton, Tooltip, Container } from "@mui/material";
 import ComputerIcon from "@mui/icons-material/Computer";
+import StarRateIcon from '@mui/icons-material/StarRate';
 import NotesIcon from "@mui/icons-material/Notes";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -11,10 +12,17 @@ const NavBar = ({ theme, changeThemeOnClick }) => {
   return (
     <Container className="navBar">
       <div className="icons_container">
-        <Tooltip title='About Me' placement="top">
-        <a href="#about_me_anchor">
+        <Tooltip title='Intro' placement="top">
+        <a href="#intro">
           <IconButton>
             <NotesIcon />
+          </IconButton>
+        </a>
+        </Tooltip>
+        <Tooltip title='About me' placement="top">
+        <a href="#about_me_anchor">
+          <IconButton>
+            <StarRateIcon />
           </IconButton>
         </a>
         </Tooltip>
