@@ -20,7 +20,7 @@ const NavBar = ({ theme, changeThemeOnClick }) => {
         </a>
         </Tooltip>
         <Tooltip title='About me' placement="top">
-        <a href="#about_me_anchor">
+        <a href="#about_me">
           <IconButton>
             <StarRateIcon />
           </IconButton>

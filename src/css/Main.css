@@ -1,11 +1,11 @@
-#intro_container, #about_me_anchor {
+#intro_container, #about_me {
   cursor: default;
 }
 
 #intro_container {
   text-align: center;
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .waving_hand {
@@ -35,6 +35,16 @@
   margin-bottom: 30px;
 }
 
-#about_me_anchor {
-  margin-top: 70px;
+#about_me {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+
+#about_me .MuiContainer-root {
+  margin-top: 30px;
+}
+
+.MuiTypography-root > ul {
+  list-style: none;
 }
