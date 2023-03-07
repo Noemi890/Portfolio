@@ -7,7 +7,8 @@ import roleplay_logo from "./roleplay_logo.png"
 export const projects = [
   {
     name: 'Cohort Manager 2.0',
-    description: 'A Software developed with my peers during the Boolean Boot camp. A web-based learning management system where teachers and admins can manage courses and users while allowing interactions among students and teachers by implementing a post area.',
+    intro: 'A Software developed with my peers during the Boolean Boot camp.',
+    description: 'A web-based learning management system where teachers and admins can manage courses and users while allowing interactions among students and teachers by implementing a post area.',
     img: cohort_manager_logo,
     video: cohort_manager_video,
     repo: ['https://github.com/Noemi890/team-dev-client-c6', 'https://github.com/Noemi890/team-dev-server-c6'],
@@ -16,27 +17,33 @@ export const projects = [
   },
   {
     name: 'PlayNation',
-    description: 'A simple serverless application, made with mock data using a JSON file, to improve my skills using React, JavaScript, CSS and Tailwind. A Website that allows the User, through a list of games, to choose the game he is interested in and have more information about it, with the possibility to be redirected to the game website.',
+    intro: 'A simple serverless application, made with mock data using a JSON file, to improve my skills using React, JavaScript, CSS and Tailwind.',
+    description: 'A Website that allows the User, through a list of games, to choose the game he is interested in and have more information about it, with the possibility to be redirected to the game website.',
     img: play_nation_logo,
     video: play_nation_video,
     repo: 'https://github.com/Noemi890/play_nation',
-    liveApp: 'https://playnation.netlify.app/'
+    liveApp: 'https://playnation.netlify.app/',
+    credentials: null
   },
   {
     name: 'RolePlay',
-    description: 'A text-based ‘social media like’ RPG developed during my final weeks at Boolean. It allows the User to create an account and with the same email have multiple characters. Each character can participate in one Game, posting stories based on that specific game and play with other characters.',
+    intro: "A text-based 'social media like' RPG developed during my final weeks at Boolean.",
+    description: 'It allows the User to create an account and with the same email have multiple characters. Each character can participate in one Game, posting stories based on that specific game and play with other characters.',
     img: roleplay_logo,
     video: null,
     repo: 'https://github.com/Noemi890/Roleplay_RPG-Text-based',
-    liveApp: null
+    liveApp: null,
+    credentials: null
   }
 ]
 
 export const projectSkeleton = {
   name: '',
+  intro: '',
   description: '',
   img: '',
   video: '',
   repo: '',
-  liveApp: ''
+  liveApp: '',
+  credentials: ''
 }

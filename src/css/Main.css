@@ -67,3 +67,12 @@
 .css-vj1n65-MuiGrid-root {
   max-width: 360px;
 }
+
+.css-1qxadfk-MuiPaper-root-MuiDialog-paper {
+  text-align: center;
+}
+
+.css-hlj6pa-MuiDialogActions-root {
+  display: flex;
+  justify-content: space-evenly;
+}
