@@ -1,28 +1,66 @@
 import React from "react";
+import { useState } from "react";
 import { projects } from "../utils/projects";
-import { Container, Card, CardActionArea, Typography, Grid } from "@mui/material";
+import { projectSkeleton } from "../utils/projects";
+import { StyledCard } from "../utils/styledCard";
+import {
+  Container,
+  CardActionArea,
+  CardMedia,
+  Typography,
+  Grid,
+  CardContent,
+  Dialog,
+  DialogTitle,
+} from "@mui/material";
 
 const Projects = () => {
+  const [dialogOpen, setDialogOpen] = useState({isOpen: false, content: {...projectSkeleton}});
+
+  const handleClick = (project) => {
+    setDialogOpen({isOpen: true, content: project})
+  };
+
+  const handleClose = () => {
+    setDialogOpen({isOpen: false, content: {}})
+  }
+
+  
+
   return (
-    <div id="projects">
-    <Container maxWidth="md">
-      <Grid container spacing={2}>
-      {
-        projects.map((p, i) => {
-          return (
-            <Grid xs={6}>
-            <Card key={i}>
-              <CardActionArea>
-                <Typography>{p.name}</Typography>
-              </CardActionArea>
-            </Card>
-            </Grid>
-          )
-        })
-      }
-      </Grid>
-    </Container>
+    <>
+      <Dialog
+        open={dialogOpen.isOpen}
+        onClose={handleClose}
+      >
+        <DialogTitle>{dialogOpen.content.name}</DialogTitle>
+      </Dialog>
+      <div id="projects">
+        <Typography variant="h3">Projects</Typography>
+        <Container maxWidth="lg">
+          {projects.map((p, i) => {
+            return (
+              <Grid>
+                <StyledCard key={i} onClick={() => handleClick(p)}>
+                  <CardActionArea sx={{ minWidth: 350 }}>
+                    <CardMedia
+                      component="img"
+                      sx={{ objectFit: "contain" }}
+                      height="140"
+                      image={p.img}
+                      alt={`screenshot of ${p.name}`}
+                    />
+                    <CardContent>
+                      <Typography variant="h6">{p.name}</Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </StyledCard>
+              </Grid>
+            );
+          })}
+        </Container>
       </div>
+    </>
   );
 };
 
