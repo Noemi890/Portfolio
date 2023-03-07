@@ -16,7 +16,7 @@ const AboutMe = () => {
             <b>CSS</b>
           </u>
           . Then, about a year ago I decided to change my life for the better. I
-          quitted my job and took on an intensive full-time course to improve my
+          left my job and took on an intensive full-time course to improve my
           skills and take on new programming languages.
         </Typography>
         <Typography variant="h5" gutterBottom mb={2}>
@@ -45,7 +45,7 @@ const AboutMe = () => {
           .
         </Typography>
         <Typography variant="h5" gutterBottom mb={2}>
-          I am proficient in <em>Material UI</em> and <em>Tailwind</em>
+          I am proficient also in <em>Material UI</em> and <em>Tailwind</em>
         </Typography>
         <Divider variant="middle" />
         <Typography className="gaming_section" variant="h5" gutterBottom mt={2}>
