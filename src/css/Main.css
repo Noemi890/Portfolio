@@ -48,3 +48,22 @@
 .MuiTypography-root > ul {
   list-style: none;
 }
+
+#projects > :first-child {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#projects .MuiContainer-root {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 200px;
+}
+
+.css-vj1n65-MuiGrid-root {
+  max-width: 360px;
+}
