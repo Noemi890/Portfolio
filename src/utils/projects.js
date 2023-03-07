@@ -1,26 +1,42 @@
+import cohort_manager_logo from "./cohort_manager_logo.png"
+import cohort_manager_video from "./cohort_manager.mp4"
+import play_nation_logo from "./play_nation_logo.png"
+import play_nation_video from "./play_nation.mp4"
+import roleplay_logo from "./roleplay_logo.png"
+
 export const projects = [
   {
     name: 'Cohort Manager 2.0',
-    description: '',
-    img: '',
-    video: '',
-    repo: '',
-    liveApp: ''
+    description: 'A Software developed with my peers during the Boolean Boot camp. A web-based learning management system where teachers and admins can manage courses and users while allowing interactions among students and teachers by implementing a post area.',
+    img: cohort_manager_logo,
+    video: cohort_manager_video,
+    repo: ['https://github.com/Noemi890/team-dev-client-c6', 'https://github.com/Noemi890/team-dev-server-c6'],
+    liveApp: 'https://cohort-manager-client.onrender.com/',
+    credentials: ['Email: teacher@teacher.com', 'Password: 123']
   },
   {
     name: 'PlayNation',
-    description: '',
-    img: '',
-    video: '',
-    repo: '',
-    liveApp: ''
+    description: 'A simple serverless application, made with mock data using a JSON file, to improve my skills using React, JavaScript, CSS and Tailwind. A Website that allows the User, through a list of games, to choose the game he is interested in and have more information about it, with the possibility to be redirected to the game website.',
+    img: play_nation_logo,
+    video: play_nation_video,
+    repo: 'https://github.com/Noemi890/play_nation',
+    liveApp: 'https://playnation.netlify.app/'
   },
   {
     name: 'RolePlay',
-    description: '',
-    img: '',
-    video: '',
-    repo: '',
-    liveApp: ''
+    description: 'A text-based ‘social media like’ RPG developed during my final weeks at Boolean. It allows the User to create an account and with the same email have multiple characters. Each character can participate in one Game, posting stories based on that specific game and play with other characters.',
+    img: roleplay_logo,
+    video: null,
+    repo: 'https://github.com/Noemi890/Roleplay_RPG-Text-based',
+    liveApp: null
   }
 ]
+
+export const projectSkeleton = {
+  name: '',
+  description: '',
+  img: '',
+  video: '',
+  repo: '',
+  liveApp: ''
+}
