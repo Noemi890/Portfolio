@@ -63,12 +63,12 @@ const Projects = () => {
             </>
           )}
           {project.credentials !== null ? (
-            <DialogContentText sx={{ textAlign: "center" }}>
+            <DialogContentText component="div" sx={{ textAlign: "center" }}>
               To use the app you will need credentials:
               {project.credentials.map((c, i) => {
                 return <Typography key={i}>{c}</Typography>;
               })}
-              <Typography>Please allow some time for the server to run.</Typography>
+              Please allow some time for the server to run.
             </DialogContentText>
           ) : (
             <></>
