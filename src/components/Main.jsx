@@ -3,6 +3,7 @@ import "../css/Main.css"
 import Intro from "./Intro"
 import AboutMe from "./AboutMe"
 import Projects from "./Projects"
+import Contacts from "./Contacts"
 
 
 const Main = () => {
@@ -11,10 +12,7 @@ const Main = () => {
       <Intro />
       <AboutMe />
       <Projects />
-      {/*
-      <Container id="contacts">
-        <Paper elevation={8}/>
-      </Container> */}
+      <Contacts />
     </>
 
   )
