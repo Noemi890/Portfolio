@@ -43,7 +43,7 @@ export const projectSkeleton = {
   description: '',
   img: '',
   video: '',
-  repo: '',
+  repo: [],
   liveApp: '',
-  credentials: ''
+  credentials: []
 }

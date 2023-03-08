@@ -43,11 +43,12 @@ const Projects = () => {
         <DialogTitle>{project.name}</DialogTitle>
         <DialogContent>
           <DialogContentText>{project.intro}</DialogContentText>
-          <Divider sx={{ marginTop: "20px", marginBottom: "20px"}}/>
-          <DialogContentText sx={{ marginBottom: "20px"}}>{project.description}</DialogContentText>
+          <Divider sx={{ marginTop: "20px", marginBottom: "20px" }} />
+          <DialogContentText sx={{ marginBottom: "20px" }}>
+            {project.description}
+          </DialogContentText>
           {project.video !== null ? (
             <iframe
-              className="iFrame_dialog"
               width="100%"
               height="300px"
               title={`video of ${project.name}`}
@@ -61,24 +62,23 @@ const Projects = () => {
               </DialogContentText>
             </>
           )}
-          {/* {project.credentials !== null ? (
-            <>
-              <DialogContentText>
-                To use the app you will need credentials:
-              </DialogContentText>
+          {project.credentials !== null ? (
+            <DialogContentText sx={{ textAlign: "center" }}>
+              To use the app you will need credentials:
               {project.credentials.map((c, i) => {
-                return (
-                  <DialogContentText key={i}>{c}</DialogContentText>
-                )
+                return <Typography key={i}>{c}</Typography>;
               })}
-            </>
-          )
-          : <></>} */}
+              <Typography>Please allow some time for the server to run.</Typography>
+            </DialogContentText>
+          ) : (
+            <></>
+          )}
           <DialogActions
             sx={{ display: "flex", justifyContent: "space-evenly" }}
           >
             {project.liveApp !== null ? (
               <a
+                style={{ textDecoration: "none" }}
                 href={project.liveApp}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -90,8 +90,37 @@ const Projects = () => {
                 <Button>live App</Button>
               </Tooltip>
             )}
+            {typeof project.repo !== "object" ? (
+              <a
+                style={{ textDecoration: "none" }}
+                href={project.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button onClick={handleRepoClick}>Repository</Button>
+              </a>
+            ) : (
+              <>
+                {project.repo.map((r, i) => {
+                  return (
+                    <a
+                      key={i}
+                      style={{ textDecoration: "none" }}
+                      href={r}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button>
+                        {project.repo[i].includes('server')
+                          ? "Server Repo"
+                          : "Client Repo"}
+                      </Button>
+                    </a>
+                  );
+                })}
+              </>
+            )}
 
-            <Button onClick={handleRepoClick}>Repository</Button>
             <Button onClick={handleClose}>Close</Button>
           </DialogActions>
         </DialogContent>
