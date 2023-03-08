@@ -15,9 +15,8 @@ const AboutMe = () => {
           <u>
             <b>CSS</b>
           </u>
-          . Then, about a year ago I decided to change my life for the better. I
-          left my job and took on an intensive full-time course to improve my
-          skills and take on new programming languages.
+          . About a year ago I decided to leave my job and start an intensive full-time course to improve my
+          skills.
         </Typography>
         <Typography variant="h5" gutterBottom mb={2}>
           I have a specific passion for <em>front-end</em>, I am proficient with{" "}
@@ -28,7 +27,7 @@ const AboutMe = () => {
           <b>
             <u>React</u>
           </b>
-          , but I've also took on some <em>back-end</em> skills during the course, such as{" "}
+          , as well as <em>Material UI</em> and <em>Tailwind</em>, but I've also took on some <em>back-end</em> skills, such as{" "}
           <u>
             <b>MySQL</b>
           </u>
@@ -43,9 +42,6 @@ const AboutMe = () => {
             <b>Json WebToken</b>
           </u>
           .
-        </Typography>
-        <Typography variant="h5" gutterBottom mb={2}>
-          I am proficient also in <em>Material UI</em> and <em>Tailwind</em>
         </Typography>
         <Divider variant="middle" />
         <Typography className="gaming_section" variant="h5" gutterBottom mt={2}>
