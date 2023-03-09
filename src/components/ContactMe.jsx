@@ -58,8 +58,8 @@ const ContactMe = () => {
   };
 
   return (
-    <>
-      <Button onClick={handleClick}> Contact me via Email </Button>
+    <div>
+      <Button size="large" onClick={handleClick}> Contact me via Email </Button>
       <Dialog open={success}>
         <DialogTitle>Thank you!</DialogTitle>
         <DialogContent>I'll reply to you as soon as possible!</DialogContent>
@@ -113,7 +113,7 @@ const ContactMe = () => {
           </DialogActions>
         </form>
       </Dialog>
-    </>
+    </div>
   )
 }
 

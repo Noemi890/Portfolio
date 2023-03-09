@@ -1,13 +1,20 @@
-import { Divider, Grid } from "@mui/material";
+import { Divider, Grid, Typography } from "@mui/material";
+import { Container } from "@mui/system";
 import React from "react";
 import ContactMe from "./ContactMe";
+import Socials from "./Social";
+
 const Contacts = () => {
   return (
     <div id="contacts">
-      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 2 }}>
+      <Typography variant="h3" mb={10}>
+        Contact Me!
+      </Typography>
+      <div className="container">
         <ContactMe />
-        <Divider orientation="vertical">OR</Divider>
-      </Grid>
+        <Divider className="divider" flexItem>OR</Divider>
+        <Socials />
+      </div>
     </div>
   );
 };

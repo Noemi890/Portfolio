@@ -49,11 +49,9 @@
   list-style: none;
 }
 
-
-
 #projects > :first-child {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 70px;
   margin-bottom: 30px;
 }
 
@@ -83,4 +81,17 @@
 .contactForm {
   display: flex;
   flex-direction: column;
+}
+
+#contacts {
+  text-align: center;
+}
+
+
+.MuiContainer-root > a {
+  text-decoration: none;
+}
+
+.MuiDivider-root.divider {
+  margin: 20px 50px;
 }
