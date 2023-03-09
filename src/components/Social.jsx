@@ -14,7 +14,7 @@ const Socials = () => {
         href="https://github.com/Noemi890"
         rel="noopener noreferrer"
       >
-        <Button size="large" startIcon={<GitHubIcon />}>
+        <Button sx={{ fontSize: 'x-large' }} startIcon={<GitHubIcon />}>
           See my github
         </Button>
       </a>
@@ -23,14 +23,14 @@ const Socials = () => {
         href="https://www.linkedin.com/in/noemi-caggiano-19b924a4/"
         rel="noopener noreferrer"
       >
-        <Button size="large" startIcon={<LinkedInIcon />}>
+        <Button sx={{ fontSize: 'x-large' }} startIcon={<LinkedInIcon />}>
           See my linkedin
         </Button>
       </a>
       <a target="_blank"
         href={`${process.env.PUBLIC_URL}/EnzaNoemiCaggianoResume%20(2).pdf`}
         rel="noopener noreferrer">
-        <Button size="large" startIcon={<OpenInBrowserIcon />}>
+        <Button sx={{ fontSize: 'x-large' }} startIcon={<OpenInBrowserIcon />}>
           See my CV
         </Button>
         </a>

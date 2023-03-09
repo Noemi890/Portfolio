@@ -20,6 +20,8 @@ import {
   Button,
   Tooltip,
 } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 
 const Projects = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,7 +85,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button>live App</Button>
+                <Button startIcon={<AutoAwesomeIcon />}>live App</Button>
               </a>
             ) : (
               <Tooltip title="Coming soon" placement="top">
@@ -121,13 +123,13 @@ const Projects = () => {
               </>
             )}
 
-            <Button onClick={handleClose}>Close</Button>
+            <Button startIcon={<CloseIcon />} onClick={handleClose}>Close</Button>
           </DialogActions>
         </DialogContent>
       </Dialog>
       <div id="projects">
         <Typography variant="h3">Projects</Typography>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{ flexDirection: 'column' }}>
           {projects.map((p, i) => {
             return (
               <Grid key={i} className="project_card">
@@ -148,8 +150,8 @@ const Projects = () => {
               </Grid>
             );
           })}
-          <Typography variant="h5">More projects incoming..</Typography>
         </Container>
+        <Typography mb={20} sx={{ textAlign: 'center' }} variant="h5">More projects incoming..</Typography>
       </div>
     </>
   );

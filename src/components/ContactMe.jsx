@@ -5,9 +5,11 @@ import {
   DialogContent,
   DialogActions,
   DialogTitle,
-  Button
+  Button,
 } from "@mui/material";
 import emailjs from "@emailjs/browser";
+import SendIcon from "@mui/icons-material/Send";
+import CloseIcon from "@mui/icons-material/Close";
 import { contactFormSkeleton } from "../utils/utils";
 
 const ContactMe = () => {
@@ -59,7 +61,10 @@ const ContactMe = () => {
 
   return (
     <div>
-      <Button size="large" onClick={handleClick}> Contact me via Email </Button>
+      <Button sx={{ fontSize: 'x-large' }} onClick={handleClick}>
+        {" "}
+        Contact me via Email{" "}
+      </Button>
       <Dialog open={success}>
         <DialogTitle>Thank you!</DialogTitle>
         <DialogContent>I'll reply to you as soon as possible!</DialogContent>
@@ -105,16 +110,23 @@ const ContactMe = () => {
               label="Write your message.."
             />
           </DialogContent>
-          <DialogActions>
-            <Button type="submit"> Contact me </Button>
-            <Button name="close" onClick={handleClose}>
+          <DialogActions sx={{ justifyContent: "center" }}>
+            <Button size="large" startIcon={<SendIcon />} type="submit">
+              Send email
+            </Button>
+            <Button
+              size="large"
+              startIcon={<CloseIcon />}
+              name="close"
+              onClick={handleClose}
+            >
               close
             </Button>
           </DialogActions>
         </form>
       </Dialog>
     </div>
-  )
-}
+  );
+};
 
-export default ContactMe
+export default ContactMe;
