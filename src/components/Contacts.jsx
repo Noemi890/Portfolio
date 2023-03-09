@@ -1,5 +1,4 @@
-import { Divider, Grid, Typography } from "@mui/material";
-import { Container } from "@mui/system";
+import { Divider, Typography } from "@mui/material";
 import React from "react";
 import ContactMe from "./ContactMe";
 import Socials from "./Social";

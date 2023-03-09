@@ -1,19 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
-import { Button, Container, Dialog, DialogActions, DialogContent } from "@mui/material";
+import { Button, Container} from "@mui/material";
 
 const Socials = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
-  const handleCvClick = () => {
-    setIsOpen(true)
-  }
-
-  const handleClose = () => {
-    setIsOpen(false)
-  }
 
   return (
     <>
