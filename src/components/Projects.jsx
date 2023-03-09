@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { projects } from "../utils/projects";
-import { projectSkeleton } from "../utils/projects";
+import { projects } from "../utils/utils.js";
+import { projectSkeleton } from "../utils/utils";
 import { StyledCard } from "../utils/styledCard";
 import {
   Container,

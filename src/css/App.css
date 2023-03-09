@@ -10,10 +10,12 @@
 
 .dark .app {
   background-image: url("../utils/background2.avif");
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .light .app {
   background-image: url("../utils/background.avif");
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

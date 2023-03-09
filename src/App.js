@@ -3,12 +3,11 @@ import { useState } from "react";
 import "./css/App.css";
 import NavBar from "./components/NavBar";
 import Main from "./components/Main";
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 
 function App() {
-
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState("dark");
 
   const themeSelected = createTheme({
     palette: {
@@ -17,28 +16,24 @@ function App() {
   });
 
   const changeThemeOnClick = () => {
-    if (theme === 'dark') {
-      setTheme('light') 
+    if (theme === "dark") {
+      setTheme("light");
 
-      document.body.className = 'light'
-    
+      document.body.className = "light";
+    } else {
+      setTheme("dark");
+
+      document.body.className = "dark";
     }
-
-    else {
-      setTheme('dark')
-
-      document.body.className = 'dark'
-    }
-    
-  }
+  };
 
   return (
     <ThemeProvider theme={themeSelected}>
       <CssBaseline />
-    <div className="app">
-      <Main />
-      <NavBar theme={theme} changeThemeOnClick={changeThemeOnClick}/>
-    </div>
+      <div className="app">
+        <Main />
+        <NavBar theme={theme} changeThemeOnClick={changeThemeOnClick} />
+      </div>
     </ThemeProvider>
   );
 }

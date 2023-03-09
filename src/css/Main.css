@@ -49,8 +49,11 @@
   list-style: none;
 }
 
+
+
 #projects > :first-child {
   text-align: center;
+  margin-top: 150px;
   margin-bottom: 30px;
 }
 
@@ -75,4 +78,9 @@
 .css-hlj6pa-MuiDialogActions-root {
   display: flex;
   justify-content: space-evenly;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
 }

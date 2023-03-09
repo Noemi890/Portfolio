@@ -47,3 +47,9 @@ export const projectSkeleton = {
   liveApp: '',
   credentials: []
 }
+
+export const contactFormSkeleton = {
+  user_email: "",
+  user_name: "",
+  user_message: ""
+}
