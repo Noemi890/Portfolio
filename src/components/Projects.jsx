@@ -130,7 +130,7 @@ const Projects = () => {
         <Container maxWidth="lg">
           {projects.map((p, i) => {
             return (
-              <Grid key={i}>
+              <Grid key={i} className="project_card">
                 <StyledCard onClick={() => handleClick(p)}>
                   <CardActionArea sx={{ minWidth: 350 }}>
                     <CardMedia
