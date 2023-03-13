@@ -22,6 +22,7 @@ import {
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Projects = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -99,7 +100,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button onClick={handleRepoClick}>Repository</Button>
+                <Button startIcon={<GitHubIcon />} onClick={handleRepoClick}>Github Repo</Button>
               </a>
             ) : (
               <>
@@ -112,7 +113,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Button>
+                      <Button startIcon={<GitHubIcon />}>
                         {project.repo[i].includes('server')
                           ? "Server Repo"
                           : "Client Repo"}

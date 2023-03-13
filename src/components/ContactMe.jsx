@@ -5,8 +5,9 @@ import {
   DialogContent,
   DialogActions,
   DialogTitle,
-  Button,
+  Button
 } from "@mui/material";
+import LoadingButton from "@mui/lab/LoadingButton"
 import emailjs from "@emailjs/browser";
 import SendIcon from "@mui/icons-material/Send";
 import CloseIcon from "@mui/icons-material/Close";
@@ -17,6 +18,7 @@ const ContactMe = () => {
   const [contactForm, setContactForm] = useState(contactFormSkeleton);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false)
 
   const serviceID = process.env.REACT_APP_SERVICE_ID;
   const templateID = process.env.REACT_APP_TEMPLATE_ID;
@@ -40,6 +42,7 @@ const ContactMe = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true)
     try {
       emailjs
         .send(serviceID, templateID, contactForm, publicKey)
@@ -48,6 +51,7 @@ const ContactMe = () => {
           setSuccess(true);
           setTimeout(() => {
             setSuccess(false);
+            setLoading(false)
           }, "3000");
         });
     } catch (e) {
@@ -55,6 +59,7 @@ const ContactMe = () => {
       setError(true);
       setTimeout(() => {
         setError(false);
+        setLoading(false)
       }, "3000");
     }
   };
@@ -111,9 +116,9 @@ const ContactMe = () => {
             />
           </DialogContent>
           <DialogActions sx={{ justifyContent: "center" }}>
-            <Button size="large" startIcon={<SendIcon />} type="submit">
+            <LoadingButton loading={loading} size="large" startIcon={<SendIcon />} type="submit" loadingPosition="start">
               Send email
-            </Button>
+            </LoadingButton>
             <Button
               size="large"
               startIcon={<CloseIcon />}
