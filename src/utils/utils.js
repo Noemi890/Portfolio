@@ -37,7 +37,7 @@ export const projects = [
   },
   {
     name: 'order-dash',
-    intro: 'A Software developed for a pub owner friend who wanted an ordering system',
+    intro: "A Software developed for a friend who's a pub owner wanting an ordering system",
     description: 'A web-based order management system, aimed to restaurants/pubs owners/employees. Whithin the app, as an owner, you can customize your menu and create tables based on a numeric system or names. As a user, you can take orders from a specific created table, adding menu items on it. At the checkout, it allows the user to checkout just some items or all the table, giving the exact amount to be paid.',
     img: '',
     video: null,
