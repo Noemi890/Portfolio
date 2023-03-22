@@ -42,7 +42,7 @@ export const projects = [
     img: "",
     video: null,
     repo: "https://github.com/Noemi890/typescript-chat",
-    liveApp: "https://typescript-chat-7885d.web.app/",
+    liveApp: "https://typescript-chat-7885d.firebaseapp.com/",
     credentials: null
   },
   {
