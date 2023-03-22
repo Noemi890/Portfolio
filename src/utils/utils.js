@@ -38,7 +38,7 @@ export const projects = [
   {
     name: "Chat-app",
     intro: "A simple chat developed to improve my skills with Typescript and Firebase Hosting.",
-    description: "A web based chat app that allows the user to login via Google and chat whit whoever is in the chat in that specific moment.",
+    description: "A web based chat app that allows the user to login via Google and chat with whoever is in the chat in that specific moment.",
     img: "",
     video: null,
     repo: "https://github.com/Noemi890/typescript-chat",
