@@ -3,7 +3,7 @@ import cohort_manager_video from "./cohort_manager.mp4"
 import play_nation_logo from "./play_nation_logo.png"
 import play_nation_video from "./play_nation.mp4"
 import roleplay_logo from "./roleplay_logo.png"
-import coming_soon_logo from "./coming_soon_logo.jpeg"
+import coming_soon_logo from "./coming_soon_logo.png"
 
 export const projects = [
   {
